@@ -36,6 +36,25 @@
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong`
         }
     </script>
+
+    <h1>Subtraindo Valores</h1>
+    <input type="number" name="caixa1" id="caixa1"> -
+    <input type="number" name="caixa2" id="caixa2">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <div id="resultado"> Resultado </div>
+    <script>
+        function subtrair() {
+            var caixa1 = window.document.getElementById('caixa1')
+            var caixa2 = window.document.getElementById('caixa2')
+            var res = window.document.getElementById('res')
+            var caixa1 = Number(caixa1.value)
+            var caixa2 = Number(caixa2.value)
+            var s = caixa1 - caixa2
+            resultado.innerHTML = `A subtração entre ${caixa1} e ${caixa2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+
+
 </body>
 </html>
 
